@@ -1,10 +1,10 @@
 # include <stdio.h>
-# include "helper.c"
+# include "ControllerLayer.c"
 
 int main() {
     printf("\nWelcome to GPay application");
     while (1) {
-        printOuterMenu();
+        printOuterMenuControllerLayer();
         printf("\nChoose your option: ");
         int option;
         scanf("%d", &option);
@@ -13,11 +13,11 @@ int main() {
 
         switch (option) {
             case 1:
-                handleRegister();
+                handleRegisterControllerLayer();
                 break;
 
             case 2:
-                handleLogin();
+                handleLoginControllerLayer();
                 break;
 
             case 3:
@@ -26,7 +26,7 @@ int main() {
                 break;
 
             case 4:
-                printAllUsersDetails();
+                printAllUsersDetailsControllerLayer();
                 break;
 
             default:
