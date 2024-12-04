@@ -185,7 +185,7 @@ void handleLogin() {
     }
 
     if (attempts > 0) {
-        displayUserMenu();
+        printRecursiveMenu();
     } else {
         printf("\nYou've exhausted your max limit of passwords");
     }
